@@ -70,6 +70,13 @@ export default function Index() {
     setShowResult("block");
   };
 
+  const resetPage = () => {
+    setEntryPrice("");
+    setPairName("");
+    setStopPrice("");
+    setShowResult("none");
+  };
+
   const calculateTp = () => {
     let stop = entryPrice - stopPrice;
     let _tp1 = parseFloat(entryPrice) + parseFloat(stop);
@@ -124,13 +131,22 @@ export default function Index() {
                     <FormGroup className="text-center">
                       <Row>
                         <Col md="4"></Col>
-                        <Col md="5">
+                        <Col md="5" style={{ paddingTop: "10px" }}>
                           <CustomInput
                             type="switch"
                             label="Short"
                             id="longFlag"
                             onChange={handleShortPositionSwitch}
                           ></CustomInput>
+                        </Col>
+                        <Col>
+                          <Button
+                            className="btn-round btn-icon"
+                            size="sm"
+                            onClick={resetPage}
+                          >
+                            <i className="tim-icons icon-refresh-01" />
+                          </Button>
                         </Col>
                       </Row>
                       <div style={{ height: "20px" }}></div>
