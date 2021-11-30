@@ -162,7 +162,9 @@ export default function Index() {
                       <Row>
                         <Col md="1"></Col>
                         <Col md="4" style={{ paddingTop: "10px" }}>
-                          <Label className="control-label">Entry Price</Label>
+                          <Label className="control-label">
+                            Entry Price ($)
+                          </Label>
                         </Col>
                         <Col md="4">
                           <Input
@@ -178,7 +180,7 @@ export default function Index() {
                       <Row>
                         <Col md="1"></Col>
                         <Col md="4" style={{ paddingTop: "10px" }}>
-                          <Label>Stop Price</Label>
+                          <Label>Stop Price ($)</Label>
                         </Col>
                         <Col md="4">
                           <Input
@@ -194,7 +196,7 @@ export default function Index() {
                       <Row>
                         <Col md="1"></Col>
                         <Col md="4" style={{ paddingTop: "10px" }}>
-                          <Label>Risk</Label>
+                          <Label>Risk ($)</Label>
                         </Col>
                         <Col md="4">
                           <Input
