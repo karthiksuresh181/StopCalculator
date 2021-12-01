@@ -9,14 +9,13 @@ gulp.task("licenses", async function () {
       gap.prependText(`/*!
 
 =========================================================
-* BLK Design System React - v1.2.0
+* Stop Calculator - v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
+* Copyright 2021 Karthik Suresh
+* Licensed under MIT 
 
-* Coded by Creative Tim
+* Coded by Karthik Suresh
 
 =========================================================
 
@@ -33,14 +32,13 @@ gulp.task("licenses", async function () {
       gap.prependText(`<!--
 
 =========================================================
-* BLK Design System React - v1.2.0
+* Stop Calculator - v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
+* Copyright 2021 Karthik Suresh
+* Licensed under MIT 
 
-* Coded by Creative Tim
+* Coded by Karthik Suresh
 
 =========================================================
 
@@ -57,14 +55,13 @@ gulp.task("licenses", async function () {
       gap.prependText(`/*!
 
 =========================================================
-* BLK Design System React - v1.2.0
+* Stop Calculator - v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
+* Copyright 2021 Karthik Suresh
+* Licensed under MIT 
 
-* Coded by Creative Tim
+* Coded by Karthik Suresh
 
 =========================================================
 
