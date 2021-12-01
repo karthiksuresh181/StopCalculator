@@ -13,6 +13,7 @@ import {
   Col,
   CardFooter,
   CardTitle,
+  UncontrolledTooltip,
 } from "reactstrap";
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -131,22 +132,40 @@ export default function Index() {
                     <FormGroup className="text-center">
                       <Row>
                         <Col md="4"></Col>
-                        <Col md="5" style={{ paddingTop: "10px" }}>
+                        <Col
+                          md="5"
+                          style={{ paddingTop: "10px" }}
+                          id="shortSwitch"
+                        >
                           <CustomInput
                             type="switch"
                             label="Short"
-                            id="longFlag"
                             onChange={handleShortPositionSwitch}
                           ></CustomInput>
+                          <UncontrolledTooltip
+                            delay={0}
+                            placement="top"
+                            target="shortSwitch"
+                          >
+                            Toggle between Long and Short Positions
+                          </UncontrolledTooltip>
                         </Col>
                         <Col>
                           <Button
-                            className="btn-round btn-icon"
+                            className="btn-round btn-icon btn-tooltip"
                             size="sm"
                             onClick={resetPage}
+                            id="tooltipReset"
                           >
                             <i className="tim-icons icon-refresh-01" />
                           </Button>
+                          <UncontrolledTooltip
+                            delay={0}
+                            placement="right"
+                            target="tooltipReset"
+                          >
+                            Reset Input
+                          </UncontrolledTooltip>
                         </Col>
                       </Row>
                       <div style={{ height: "20px" }}></div>
