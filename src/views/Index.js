@@ -141,6 +141,7 @@ export default function Index() {
                             type="switch"
                             label="Short"
                             onChange={handleShortPositionSwitch}
+                            id="shortCustomSwitch"
                           ></CustomInput>
                           <UncontrolledTooltip
                             delay={0}
