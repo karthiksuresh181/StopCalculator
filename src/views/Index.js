@@ -34,7 +34,7 @@ export default function Index() {
   const [tp4, settp4] = React.useState("");
   const [tp5, settp5] = React.useState("");
 
-  const [showResult, setShowResult] = React.useState("None");
+  const [showResult, setShowResult] = React.useState("none");
 
   const handleGetCurrentPrice = () => {
     if (pairName === "") return;
@@ -106,7 +106,7 @@ export default function Index() {
     <>
       <IndexNavbar />
       <div className="wrapper">
-        <div className="page-header header-filter">
+        <div className="">
           <div className="squares square1" />
           <div className="squares square2" />
           <div className="squares square3" />
@@ -122,7 +122,7 @@ export default function Index() {
                   <CardHeader>
                     <img
                       alt="..."
-                      className="img-center img-fluid rounded-circle"
+                      className="img-center img-fluid"
                       src={require("assets/img/bitcoin.png").default}
                     />
                     <h4 className="title">Stop Calculator</h4>
@@ -237,104 +237,112 @@ export default function Index() {
           </Container>
         </div>
 
-        <div className="main main-raised">
-          <Row>
-            <Col md="3"></Col>
-            <Col md="6" style={{ display: showResult }}>
-              <Card>
-                <CardHeader>
-                  <CardTitle tag="h2" className="text-center">
-                    Quantity
-                  </CardTitle>
-                </CardHeader>
-                <CardBody>
-                  <h3 className="text-center">{buyQuantity} </h3>
-                </CardBody>
-              </Card>
-            </Col>
-          </Row>
-          <Row>
-            <Col md="2" style={{ display: showResult }}>
-              <Card>
-                <CardHeader>
-                  <CardTitle tag="h3" className="text-center">
-                    Stop Loss
-                  </CardTitle>
-                </CardHeader>
-                <CardBody>
-                  <h4 className="text-center">Price: {stopPrice}$</h4>
-                  <h4 className="text-center">Loss: {risk}$</h4>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col md="2" style={{ display: showResult }}>
-              <Card>
-                <CardHeader>
-                  <CardTitle tag="h3" className="text-center">
-                    Take Profit 1
-                  </CardTitle>
-                </CardHeader>
-                <CardBody>
-                  <h4 className="text-center">Price: {tp1}$</h4>
-                  <h4 className="text-center">Profit: {risk * 1}$</h4>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col md="2" style={{ display: showResult }}>
-              <Card>
-                <CardHeader>
-                  <CardTitle tag="h3" className="text-center">
-                    Take Profit 2
-                  </CardTitle>
-                </CardHeader>
-                <CardBody>
-                  <h4 className="text-center">Price: {tp2}$</h4>
-                  <h4 className="text-center">Profit: {risk * 2}$</h4>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col md="2" style={{ display: showResult }}>
-              <Card>
-                <CardHeader>
-                  <CardTitle tag="h3" className="text-center">
-                    Take Profit 3
-                  </CardTitle>
-                </CardHeader>
-                <CardBody>
-                  <h4 className="text-center">Price: {tp3}$</h4>
-                  <h4 className="text-center">Profit: {risk * 3}$</h4>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col md="2" style={{ display: showResult }}>
-              <Card>
-                <CardHeader>
-                  <CardTitle tag="h3" className="text-center">
-                    Take Profit 4
-                  </CardTitle>
-                </CardHeader>
-                <CardBody>
-                  <h4 className="text-center">Price: {tp4}$</h4>
-                  <h4 className="text-center">Profit: {risk * 4}$</h4>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col md="2" style={{ display: showResult }}>
-              <Card>
-                <CardHeader>
-                  <CardTitle tag="h3" className="text-center">
-                    Take Profit 5
-                  </CardTitle>
-                </CardHeader>
-                <CardBody>
-                  <h4 className="text-center">Price: {tp5}$</h4>
-                  <h4 className="text-center">Profit: {risk * 5}$</h4>
-                </CardBody>
-              </Card>
-            </Col>
-          </Row>
+        <div className="main">
+          <div className="section section-basic" id="basic-elements">
+            <img
+              alt="..."
+              className="path"
+              src={require("assets/img/path1.png").default}
+            />
+            <Container style={{ display: showResult }}>
+              <Row>
+                <Col md="3"></Col>
+                <Col md="6">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle tag="h2" className="text-center">
+                        Quantity
+                      </CardTitle>
+                    </CardHeader>
+                    <CardBody>
+                      <h3 className="text-center">{buyQuantity} </h3>
+                    </CardBody>
+                  </Card>
+                </Col>
+              </Row>
+              <Row>
+                <Col md="2">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle tag="h3" className="text-center">
+                        Stop Loss
+                      </CardTitle>
+                    </CardHeader>
+                    <CardBody>
+                      <h4 className="text-center">Price: {stopPrice}$</h4>
+                      <h4 className="text-center">Loss: {risk}$</h4>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col md="2">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle tag="h3" className="text-center">
+                        Take Profit 1
+                      </CardTitle>
+                    </CardHeader>
+                    <CardBody>
+                      <h4 className="text-center">Price: {tp1}$</h4>
+                      <h4 className="text-center">Profit: {risk * 1}$</h4>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col md="2">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle tag="h3" className="text-center">
+                        Take Profit 2
+                      </CardTitle>
+                    </CardHeader>
+                    <CardBody>
+                      <h4 className="text-center">Price: {tp2}$</h4>
+                      <h4 className="text-center">Profit: {risk * 2}$</h4>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col md="2">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle tag="h3" className="text-center">
+                        Take Profit 3
+                      </CardTitle>
+                    </CardHeader>
+                    <CardBody>
+                      <h4 className="text-center">Price: {tp3}$</h4>
+                      <h4 className="text-center">Profit: {risk * 3}$</h4>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col md="2">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle tag="h3" className="text-center">
+                        Take Profit 4
+                      </CardTitle>
+                    </CardHeader>
+                    <CardBody>
+                      <h4 className="text-center">Price: {tp4}$</h4>
+                      <h4 className="text-center">Profit: {risk * 4}$</h4>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col md="2">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle tag="h3" className="text-center">
+                        Take Profit 5
+                      </CardTitle>
+                    </CardHeader>
+                    <CardBody>
+                      <h4 className="text-center">Price: {tp5}$</h4>
+                      <h4 className="text-center">Profit: {risk * 5}$</h4>
+                    </CardBody>
+                  </Card>
+                </Col>
+              </Row>
+            </Container>
+          </div>
         </div>
-        <div style={{ height: "100px" }}></div>
         <Footer />
       </div>
     </>

@@ -16,18 +16,8 @@
 
 */
 import React from "react";
-import { Link } from "react-router-dom";
 // reactstrap components
-import {
-  Button,
-  NavItem,
-  NavLink,
-  Nav,
-  Container,
-  Row,
-  Col,
-  UncontrolledTooltip,
-} from "reactstrap";
+import { Container } from "reactstrap";
 
 export default function Footer() {
   return (
@@ -44,7 +34,7 @@ export default function Footer() {
           <a href="#" target="_blank">
             Karthik Suresh
           </a>{" "}
-          for a better analysis.
+          for a simpler trading.
         </div>
       </Container>
     </footer>
