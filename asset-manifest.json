@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/StopCalculator/static/css/main.f1f1917a.chunk.css",
-    "main.js": "/StopCalculator/static/js/main.abd723f6.chunk.js",
-    "main.js.map": "/StopCalculator/static/js/main.abd723f6.chunk.js.map",
+    "main.css": "/StopCalculator/static/css/main.8ca4481f.chunk.css",
+    "main.js": "/StopCalculator/static/js/main.6e1faeac.chunk.js",
+    "main.js.map": "/StopCalculator/static/js/main.6e1faeac.chunk.js.map",
     "runtime-main.js": "/StopCalculator/static/js/runtime-main.659a2d8f.js",
     "runtime-main.js.map": "/StopCalculator/static/js/runtime-main.659a2d8f.js.map",
     "static/js/2.0961e475.chunk.js": "/StopCalculator/static/js/2.0961e475.chunk.js",
     "static/js/2.0961e475.chunk.js.map": "/StopCalculator/static/js/2.0961e475.chunk.js.map",
     "index.html": "/StopCalculator/index.html",
-    "static/css/main.f1f1917a.chunk.css.map": "/StopCalculator/static/css/main.f1f1917a.chunk.css.map",
+    "static/css/main.8ca4481f.chunk.css.map": "/StopCalculator/static/css/main.8ca4481f.chunk.css.map",
     "static/js/2.0961e475.chunk.js.LICENSE.txt": "/StopCalculator/static/js/2.0961e475.chunk.js.LICENSE.txt",
-    "static/js/main.abd723f6.chunk.js.LICENSE.txt": "/StopCalculator/static/js/main.abd723f6.chunk.js.LICENSE.txt",
     "static/media/bitcoin.png": "/StopCalculator/static/media/bitcoin.47422bea.png",
     "static/media/blk-design-system-react.scss?v=1.2.0": "/StopCalculator/static/media/square5.16283001.png",
     "static/media/nucleo-icons.css": "/StopCalculator/static/media/nucleo.bd5cce8b.eot",
@@ -19,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.659a2d8f.js",
     "static/js/2.0961e475.chunk.js",
-    "static/css/main.f1f1917a.chunk.css",
-    "static/js/main.abd723f6.chunk.js"
+    "static/css/main.8ca4481f.chunk.css",
+    "static/js/main.6e1faeac.chunk.js"
   ]
 }
